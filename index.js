@@ -25,6 +25,10 @@ server.on('request', (req, res) => {
     <li>hello</li>
     </ul> 
     </body></html>`);
+    res.end();
+  } else {
+    res.statusCode = 404;
+    res.end();
   }
 });
 
